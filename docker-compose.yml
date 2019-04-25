@@ -1,0 +1,13 @@
+version: "3.3"
+
+networks:
+  proxy:
+    external: true
+
+
+services:
+  spamassasin:
+    image: clarity99/spamassasin
+    restart: always
+    ports:
+      - "783:783"
